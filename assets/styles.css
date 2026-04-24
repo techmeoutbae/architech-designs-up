@@ -115,6 +115,10 @@ button, input, textarea { font: inherit; }
   pointer-events: none;
 }
 .hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.86fr); gap: 54px; align-items: center; }
+.hero-simple .hero-grid { grid-template-columns: minmax(0, 900px); justify-content: center; text-align: center; }
+.hero-simple .hero-copy { margin: 0 auto; }
+.hero-simple h1, .hero-simple .hero-lede { margin-left: auto; margin-right: auto; }
+.hero-simple .hero-actions { justify-content: center; }
 .hero-copy, .hero-visual, .section-intro, .panel, .solution-card, .system-block, .transformation-card, .price-card, .process-step, .feature-item, .contact-card, .mini-card { min-width: 0; }
 .eyebrow {
   margin: 0 0 12px;
@@ -194,6 +198,7 @@ small { color: var(--silver-400); }
 .panel small { display: block; margin-top: 18px; }
 
 .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.solutions-grid-tight { grid-template-columns: repeat(4, 1fr); }
 .solution-card { padding: 26px; transition: transform 180ms ease, border-color 180ms ease, background 180ms ease; }
 .solution-card:hover, .system-block:hover, .price-card:hover { transform: translateY(-4px); border-color: rgba(98, 199, 255, 0.4); }
 .solution-card ul, .system-block ul, .price-card ul, .transformation-card ul { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
@@ -223,6 +228,7 @@ small { color: var(--silver-400); }
 
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: stretch; }
 .price-card { padding: 28px; display: flex; flex-direction: column; }
+.section-packages .price-card { min-height: 100%; }
 .price-card.featured { border-color: rgba(98, 199, 255, 0.5); background: linear-gradient(145deg, rgba(11, 45, 89, 0.68), rgba(255, 255, 255, 0.04)); }
 .price-card .positioning { color: var(--silver-100); font-weight: 650; }
 .price-card .btn { margin-top: auto; }
@@ -288,6 +294,7 @@ small { color: var(--silver-400); }
   .hero-visual { min-height: 460px; }
   .section-intro { position: static; }
   .trust-grid, .trust-grid ul, .card-grid, .system-blocks, .transformation-grid, .pricing-grid { grid-template-columns: 1fr 1fr; }
+  .solutions-grid-tight { grid-template-columns: repeat(2, 1fr); }
   .process-rail { grid-template-columns: 1fr; }
   .wide-card { grid-column: auto; }
 }
@@ -307,6 +314,7 @@ small { color: var(--silver-400); }
   .btn { width: 100%; }
   .panel, .solution-card, .system-block, .transformation-card, .price-card, .process-step, .feature-item, .contact-card, .mini-card { padding: 20px; }
   h1 { font-size: clamp(2.05rem, 9vw, 2.7rem); line-height: 1.04; max-width: 10.5ch; }
+  .hero-simple h1 { max-width: 11ch; }
   h2 { font-size: clamp(2rem, 10vw, 3rem); }
   .hero-lede { font-size: 1rem; }
   .hero-grid, .hero-copy, .hero-visual, .system-frame, .trust-grid, .section-grid, .cta-grid { max-width: calc(100vw - 48px); }
