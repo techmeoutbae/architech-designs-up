@@ -176,9 +176,10 @@ small { color: var(--silver-400); }
 
 .trust-strip { border-block: 1px solid var(--line); background: rgba(255, 255, 255, 0.035); }
 .trust-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 26px; align-items: center; padding: 22px 0; }
+.trust-grid-compact { display: block; padding: 16px 0; }
 .trust-grid p { margin: 0; color: var(--white); font-weight: 750; }
 .trust-grid ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0; padding: 0; list-style: none; }
-.trust-grid li { padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); color: var(--silver-200); background: rgba(255, 255, 255, 0.04); font-size: 0.9rem; text-align: center; }
+.trust-grid li { padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--radius); color: var(--silver-200); background: rgba(255, 255, 255, 0.035); font-size: 0.88rem; text-align: center; }
 
 .section { padding: 84px 0; }
 .section-deep { background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(2,7,19,0.26)); border-block: 1px solid var(--line); }
@@ -225,6 +226,7 @@ small { color: var(--silver-400); }
 .transformation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
 .transformation-card { padding: 26px; }
 .transformation-card h4 { margin: 22px 0 8px; color: var(--silver-100); font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.1em; }
+.transformation-card > a { display: inline-flex; margin-top: 20px; color: var(--blue-300); font-weight: 800; }
 
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: stretch; }
 .price-card { padding: 28px; display: flex; flex-direction: column; }
