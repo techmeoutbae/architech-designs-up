@@ -67,7 +67,7 @@ button, input, textarea { font: inherit; }
 }
 .site-header.is-scrolled { box-shadow: 0 12px 35px rgba(0, 0, 0, 0.28); }
 .nav { min-height: 78px; display: flex; align-items: center; gap: 22px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: 0; font-size: large; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: 0; font-size: medium; }
 .brand img { width: 46px; height: 46px; object-fit: contain; }
 .brand span { white-space: nowrap; }
 .nav-menu { margin-left: auto; display: flex; align-items: center; gap: 22px; color: var(--silver-200); font-size: 0.92rem; }
@@ -372,6 +372,21 @@ p { color: var(--silver-400); }
   opacity: 0.32;
   filter: drop-shadow(0 32px 70px rgba(0, 0, 0, 0.45));
 }
+
+@media (max-width: 760px) {
+  .hero.cinematic-hero {
+    min-height: 54vh;
+    padding-top: 0px;
+    padding-bottom: 37px;
+  }
+
+  .cinematic-content {
+    min-height: 54vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .system-frame {
   position: relative;
   z-index: 1;
