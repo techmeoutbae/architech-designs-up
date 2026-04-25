@@ -51,16 +51,36 @@
     </header>
 
     <main id="main">
-      <section class="hero hero-home hero-simple">
-        <div class="hero-grid shell">
-          <div class="hero-copy reveal">
-            <h1>Premium lead generation systems for service businesses.</h1>
-            <p class="hero-lede">Websites, booking flows, and digital infrastructure built to help serious businesses convert with more clarity.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="contact.html">Book a Strategy Call</a>
-              <a class="btn btn-secondary" href="packages.html">View Packages</a>
-            </div>
-            <p class="support-line">Premium builds for businesses ready to move beyond a basic website.</p>
+      <section class="hero cinematic-hero" data-video-hero>
+        <div class="cinematic-media" aria-hidden="true">
+          <video class="cinematic-video" autoplay muted playsinline preload="metadata" poster="assets/architech-hero-poster.jpg" data-hero-video>
+            <source src="/assets/architech-hero-reel.mp4" type="video/mp4">
+          </video>
+          <div class="cinematic-fallback"></div>
+        </div>
+        <div class="cinematic-overlay" aria-hidden="true"></div>
+        <div class="video-loading" data-video-loading>VIDEO LOADING...</div>
+        <div class="shell cinematic-content">
+          <span class="sr-only">Architech Designs premium digital systems video hero</span>
+        </div>
+        <div class="industry-marquee" aria-label="Industries served">
+          <div class="industry-track">
+            <span>BEAUTY BUSINESSES</span>
+            <span>MED SPAS</span>
+            <span>CONTRACTORS</span>
+            <span>HOME SERVICES</span>
+            <span>LAW FIRMS</span>
+            <span>WELLNESS BRANDS</span>
+            <span>CONSULTANTS</span>
+            <span>REAL ESTATE TEAMS</span>
+            <span aria-hidden="true">BEAUTY BUSINESSES</span>
+            <span aria-hidden="true">MED SPAS</span>
+            <span aria-hidden="true">CONTRACTORS</span>
+            <span aria-hidden="true">HOME SERVICES</span>
+            <span aria-hidden="true">LAW FIRMS</span>
+            <span aria-hidden="true">WELLNESS BRANDS</span>
+            <span aria-hidden="true">CONSULTANTS</span>
+            <span aria-hidden="true">REAL ESTATE TEAMS</span>
           </div>
         </div>
       </section>
@@ -78,35 +98,36 @@
 
       <section class="section section-deep">
         <div class="shell">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Core solutions</p>
-            <h2>Built to improve how your business attracts, captures, and handles leads.</h2>
-            <p>Every system is designed to make your business easier to trust, easier to contact, and easier to buy from.</p>
+          <div class="section-heading strategy-heading reveal">
+            <h2 class="strategy-title">
+              <span class="strategy-word strategy-word-light">Strategy</span>
+              <span class="strategy-arrow" aria-hidden="true">→</span>
+              <span class="strategy-word strategy-word-mid">System</span>
+              <span class="strategy-arrow" aria-hidden="true">→</span>
+              <span class="strategy-word strategy-word-deep">Growth</span>
+            </h2>
+            <p>We build systems for serious businesses that want to generate more leads, convert them, and automate their lead management.</p>
           </div>
-          <div class="card-grid solutions-grid solutions-grid-tight">
-            <article class="solution-card reveal">
+          <div class="solution-preview-grid reveal">
+            <article class="solution-preview-card">
               <h3>Lead Generation Websites</h3>
-              <p>High-end websites designed around trust, service clarity, and qualified inquiry flow.</p>
-              <ul><li>Premium page structure</li><li>Conversion-focused CTAs</li><li>Technical SEO foundation</li></ul>
+              <p>Premium websites built to turn attention into qualified leads.</p>
             </article>
-            <article class="solution-card reveal">
+            <article class="solution-preview-card">
               <h3>Booking + Inquiry Systems</h3>
-              <p>Streamlined paths that turn interest into scheduled calls, requests, and organized lead records.</p>
-              <ul><li>Custom forms</li><li>Calendar integrations</li><li>Qualification logic</li></ul>
+              <p>Smoother paths for consultations, quote requests, and client action.</p>
             </article>
-            <article class="solution-card reveal">
+            <article class="solution-preview-card">
               <h3>CRM + Follow-Up Automation</h3>
-              <p>Automated workflows that keep prospects moving after they inquire, book, or request information.</p>
-              <ul><li>Lead routing</li><li>Status pipelines</li><li>Email follow-up</li></ul>
+              <p>Systems that help leads move forward instead of going cold.</p>
             </article>
-            <article class="solution-card reveal">
+            <article class="solution-preview-card">
               <h3>Client Portals</h3>
-              <p>Polished client-facing hubs for documents, project updates, payments, messages, and resources.</p>
-              <ul><li>Secure access</li><li>Client dashboards</li><li>Experience upgrades</li></ul>
+              <p>A more polished client experience after the inquiry becomes a project.</p>
             </article>
           </div>
           <div class="center-action reveal">
-            <a class="btn btn-primary" href="services.html">Explore Services</a>
+            <a class="btn btn-primary" href="contact.html">Book Strategy Call</a>
           </div>
         </div>
       </section>
@@ -115,30 +136,44 @@
         <div class="shell">
           <div class="section-heading reveal">
             <p class="eyebrow">Premium systems preview</p>
-            <h2>Software-enabled systems behind a sharper client experience.</h2>
-            <p>Short, practical infrastructure for lead handling, client communication, and revenue operations.</p>
+            <p>Infrastructure for lead handling, client communication, and revenue operations.</p>
           </div>
-          <div class="system-blocks">
-            <article class="system-block reveal">
-              <span class="label">Client-facing</span>
-              <h3>Client Experience Portal</h3>
-              <p>A branded place for clients to access updates, documents, payments, and next steps.</p>
-              <ul><li>Secure client access</li><li>Documents and resources</li><li>Premium service presentation</li></ul>
-              <a href="services.html#portals">View portal systems</a>
+          <div class="solution-accordion system-accordion reveal" data-solution-accordion>
+            <article class="solution-box">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="system-panel-1">
+                <span><em>Client-facing</em><strong>Client Experience Portal</strong><small>A branded place for clients to access updates, documents, payments, and next steps.</small></span>
+                <span class="solution-icon" aria-hidden="true"></span>
+              </button>
+              <div class="solution-panel" id="system-panel-1">
+                <div class="solution-panel-inner">
+                  <ul><li>Secure client access</li><li>Documents and resources</li><li>Premium service presentation</li></ul>
+                  <a href="services.html#portals">View portal systems</a>
+                </div>
+              </div>
             </article>
-            <article class="system-block reveal">
-              <span class="label">Internal operations</span>
-              <h3>Admin / Lead Management Dashboard</h3>
-              <p>A focused dashboard for inquiries, stages, bookings, follow-up status, and priority leads.</p>
-              <ul><li>Lead visibility</li><li>Pipeline stages</li><li>Team-ready organization</li></ul>
-              <a href="services.html">View dashboard builds</a>
+            <article class="solution-box">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="system-panel-2">
+                <span><em>Internal operations</em><strong>Admin / Lead Management Dashboard</strong><small>A focused dashboard for inquiries, stages, bookings, follow-up status, and priority leads.</small></span>
+                <span class="solution-icon" aria-hidden="true"></span>
+              </button>
+              <div class="solution-panel" id="system-panel-2">
+                <div class="solution-panel-inner">
+                  <ul><li>Lead visibility</li><li>Pipeline stages</li><li>Team-ready organization</li></ul>
+                  <a href="services.html">View dashboard builds</a>
+                </div>
+              </div>
             </article>
-            <article class="system-block reveal">
-              <span class="label">Revenue support</span>
-              <h3>Custom Lead Qualification Tools</h3>
-              <p>Smart intake and service-fit tools that help your team receive cleaner opportunities.</p>
-              <ul><li>Qualification flows</li><li>Custom intake logic</li><li>Payment-ready paths</li></ul>
-              <a href="services.html">View revenue tools</a>
+            <article class="solution-box">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="system-panel-3">
+                <span><em>Revenue support</em><strong>Custom Lead Qualification Tools</strong><small>Smart intake and service-fit tools that help your team receive cleaner opportunities.</small></span>
+                <span class="solution-icon" aria-hidden="true"></span>
+              </button>
+              <div class="solution-panel" id="system-panel-3">
+                <div class="solution-panel-inner">
+                  <ul><li>Qualification flows</li><li>Custom intake logic</li><li>Payment-ready paths</li></ul>
+                  <a href="services.html">View revenue tools</a>
+                </div>
+              </div>
             </article>
           </div>
         </div>
@@ -147,93 +182,98 @@
       <section class="section section-deep">
         <div class="shell section-grid">
           <div class="section-intro reveal">
-            <p class="eyebrow">Why Architech Designs</p>
-            <h2>Strategy, presentation, and infrastructure in one build.</h2>
-            <p>We design beyond surface-level aesthetics so the website supports trust, conversion, and cleaner business systems.</p>
+            <h2 class="why-gradient-title">
+              <span>Strategy,</span>
+              <span>presentation,</span>
+              <span>and infrastructure</span>
+              <span>in one build.</span>
+            </h2>
+            <p>Instead of losing leads to outdated websites, scattered tools, slow follow-up, and poor system performance, you get one connected system built to help your business look more professional, capture better inquiries, manage clients smoothly, and turn more visitors into paying clients.</p>
           </div>
           <div class="feature-list">
-            <article class="feature-item reveal"><h3>Premium presentation</h3><p>Your business gets a higher-end digital presence that supports stronger perceived value.</p></article>
-            <article class="feature-item reveal"><h3>Strategic conversion thinking</h3><p>Every section, CTA, form, and page path has a role in moving serious visitors forward.</p></article>
-            <article class="feature-item reveal"><h3>Custom execution</h3><p>Your site and systems are shaped around your service model, not squeezed into a generic template.</p></article>
-            <article class="feature-item reveal"><h3>Long-term infrastructure</h3><p>We build foundations that can support automation, dashboards, portals, and future growth.</p></article>
+            <article class="feature-item feature-premium reveal">
+              <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5h16v14H4Z"/><path d="M4 9h16"/><path d="M8 15h8"/></svg></span>
+              <div><h3>Premium presentation</h3><p>Your business gets a higher-end digital presence that supports stronger perceived value.</p></div>
+            </article>
+            <article class="feature-item feature-premium reveal">
+              <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18h16"/><path d="M5 15l5-5 4 4 5-7"/><path d="M15 7h4v4"/></svg></span>
+              <div><h3>Strategic conversion thinking</h3><p>Every section, CTA, form, and page path has a role in moving serious visitors forward.</p></div>
+            </article>
+            <article class="feature-item feature-premium reveal">
+              <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v7"/><path d="M8 7h8"/><path d="M8 10h8"/><path d="M7 21h10a4 4 0 0 0 4-4v-5a9 9 0 0 0-18 0v5a4 4 0 0 0 4 4Z"/></svg></span>
+              <div><h3>Custom execution</h3><p>Your site and systems are shaped around your service model, not squeezed into a generic template.</p></div>
+            </article>
+            <article class="feature-item feature-premium reveal">
+              <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 21h16"/><path d="M6 21V4h12v17"/><path d="M9 8h2"/><path d="M13 8h2"/><path d="M9 12h2"/><path d="M13 12h2"/><path d="M10 21v-5h4v5"/></svg></span>
+              <div><h3>Long-term infrastructure</h3><p>We build foundations that can support automation, dashboards, portals, and future growth.</p></div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-packages">
+      <section class="section section-services">
         <div class="shell">
           <div class="section-heading reveal">
-            <p class="eyebrow">Packages</p>
-            <h2>Premium offers built to match your stage of growth.</h2>
-            <p>Choose the level of system your business needs now, then expand as your operation grows.</p>
+            <p class="eyebrow">Services</p>
+            <p>Focused digital systems built to improve lead flow, booking, follow-up, and client experience.</p>
           </div>
-          <div class="pricing-grid">
-            <article class="price-card reveal">
-              <span class="label">Foundation</span>
-              <h3>Revenue Starter</h3>
-              <p class="positioning">A premium website foundation for businesses ready to look more credible and capture better inquiries.</p>
-              <p>Best for: upgrading from a basic or outdated presence.</p>
-              <ul><li>Premium homepage</li><li>Service page structure</li><li>Inquiry-focused CTA flow</li><li>Mobile-first design</li><li>Technical SEO setup</li><li>Contact form integration</li></ul>
-              <a class="btn btn-secondary" href="contact.html">Start With Revenue Starter</a>
-            </article>
-            <article class="price-card featured reveal">
-              <span class="label">Most strategic</span>
-              <h3>Lead Generation System</h3>
-              <p class="positioning">A conversion-focused website and inquiry system built to turn visitors into better-qualified opportunities.</p>
-              <p>Best for: stronger lead flow, booking paths, and service clarity.</p>
-              <ul><li>Multi-page conversion website</li><li>Landing page or funnel path</li><li>Custom inquiry form</li><li>Booking flow integration</li><li>Lead capture routing</li><li>SEO content architecture</li><li>Launch analytics setup</li></ul>
-              <a class="btn btn-primary" href="contact.html">Build My Lead System</a>
-            </article>
-            <article class="price-card reveal">
-              <span class="label">Advanced</span>
-              <h3>Revenue System Pro</h3>
-              <p class="positioning">A premium website plus custom systems for lead management, client experience, automation, and revenue operations.</p>
-              <p>Best for: a more complete digital infrastructure.</p>
-              <ul><li>Everything in Lead Generation System</li><li>CRM and follow-up automation</li><li>Client portal or dashboard</li><li>Payment-ready flows</li><li>Custom lead qualification</li><li>Admin visibility tools</li><li>Optimization roadmap</li></ul>
-              <a class="btn btn-secondary" href="contact.html">Discuss Revenue System Pro</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="shell">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Featured Transformations</p>
-            <h2>Structured upgrades designed to improve how a business presents, converts, and operates.</h2>
-            <p>A look at how stronger positioning, cleaner user flow, and better systems can elevate the client experience.</p>
-          </div>
-          <div class="transformation-grid">
-            <article class="transformation-card reveal">
-              <h3>Beauty Service Revenue System</h3>
-              <p>A premium service redesign focused on clearer booking flow, stronger trust, and a more polished client journey.</p>
-              <ul><li>Elevated service positioning</li><li>Improved mobile booking flow</li><li>CRM follow-up structure</li></ul>
-              <a href="featured-transformations.html">View transformation</a>
-            </article>
-            <article class="transformation-card reveal">
-              <h3>Home Services Conversion Platform</h3>
-              <p>A more serious inquiry system for buyers who need clarity, credibility, and a fast path to request help.</p>
-              <ul><li>Service hierarchy rebuilt</li><li>Quote flow simplified</li><li>Lead dashboard structure</li></ul>
-              <a href="featured-transformations.html">View transformation</a>
-            </article>
-            <article class="transformation-card reveal">
-              <h3>Premium Client Experience Portal</h3>
-              <p>A branded portal that makes the post-sale experience feel organized, transparent, and high-end.</p>
-              <ul><li>Client resources centralized</li><li>Status visibility improved</li><li>Payment access streamlined</li></ul>
-              <a href="featured-transformations.html">View transformation</a>
-            </article>
+          <div class="service-orbit-grid">
+            <a class="service-orbit-card service-orbit-cyan reveal" href="services.html#websites">
+              <span class="service-orbit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span>
+              <h3>Lead Generation Websites</h3>
+              <p>Premium websites built to turn attention into qualified inquiries.</p>
+            </a>
+            <a class="service-orbit-card service-orbit-gold reveal" href="services.html">
+              <span class="service-orbit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7h8"/><path d="M8 12h6"/><path d="M12 22a8 8 0 1 0-8-8v7l3-2"/></svg></span>
+              <h3>Booking + Inquiry Systems</h3>
+              <p>Smoother paths for consultations, quote requests, and client action.</p>
+            </a>
+            <a class="service-orbit-card service-orbit-rose reveal" href="services.html#automation">
+              <span class="service-orbit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.6-5.7"/><path d="M18 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.6 5.7"/><path d="M6 21v-5h5"/></svg></span>
+              <h3>CRM + Follow-Up Automation</h3>
+              <p>Follow-up workflows that help leads move forward instead of going cold.</p>
+            </a>
+            <a class="service-orbit-card service-orbit-violet reveal" href="services.html#portals">
+              <span class="service-orbit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/></svg></span>
+              <h3>Client Portals</h3>
+              <p>Polished client access for files, payments, updates, and project communication.</p>
+            </a>
+            <a class="service-orbit-card service-orbit-green reveal" href="services.html#seo">
+              <span class="service-orbit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 18a8 8 0 1 1 5.7-2.3L21 21"/><path d="M8 10h4"/><path d="M10 8v4"/></svg></span>
+              <h3>SEO + Local Discovery</h3>
+              <p>Search-ready structure that helps nearby buyers find, trust, and contact your business.</p>
+            </a>
+            <a class="service-orbit-card service-orbit-orange reveal" href="services.html#optimization">
+              <span class="service-orbit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20a8 8 0 1 0-8-8"/><path d="M12 12l5-5"/><path d="M8 20h8"/><path d="M12 4v3"/><path d="M19.1 9h-3"/></svg></span>
+              <h3>Web Optimization</h3>
+              <p>Performance, mobile polish, page clarity, and conversion improvements for stronger results.</p>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section section-deep">
+      <section class="section section-deep process-chart-section">
         <div class="shell">
           <div class="section-heading reveal">
             <p class="eyebrow">Process</p>
-            <h2>A clear process for serious business systems.</h2>
             <p>Every build moves through strategy, execution, launch, and refinement with clarity from start to finish.</p>
           </div>
-          <div class="process-rail">
+          <div class="process-chart">
+            <svg class="process-trend-line" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="processLineGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f4f7fb"></stop>
+                  <stop offset="42%" stop-color="#62c7ff"></stop>
+                  <stop offset="100%" stop-color="#0b2d59"></stop>
+                </linearGradient>
+              </defs>
+              <path d="M70 170 L285 120 L500 150 L715 78 L930 38"></path>
+              <circle cx="70" cy="170" r="8"></circle>
+              <circle cx="285" cy="120" r="8"></circle>
+              <circle cx="500" cy="150" r="8"></circle>
+              <circle cx="715" cy="78" r="8"></circle>
+              <circle cx="930" cy="38" r="8"></circle>
+            </svg>
             <article class="process-step reveal"><span>01</span><h3>Audit</h3><p>Review the current website, offer, and inquiry flow.</p></article>
             <article class="process-step reveal"><span>02</span><h3>Strategy</h3><p>Map positioning, page structure, CTAs, and systems.</p></article>
             <article class="process-step reveal"><span>03</span><h3>Build</h3><p>Design and develop the website, automation, or portal.</p></article>
@@ -243,6 +283,7 @@
         </div>
       </section>
 
+      
       <section class="final-cta" id="contact-preview">
         <div class="shell cta-grid">
           <div class="reveal">

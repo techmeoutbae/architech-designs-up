@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking | Calla Lily Day Spa & Salon Redesign Concept</title>
+    <meta name="description" content="Calla Lily Day Spa & Salon booking flow redesign concept for service selection, provider preference, card-on-file policies, contact details, and confirmation.">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script defer src="assets/script.js"></script>
+  </head>
+  <body>
+    <header class="site-header"><nav class="nav shell" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark"></span><span>Calla Lily</span></a><button class="nav-toggle" type="button" aria-expanded="false"><span></span><span></span><span></span><span class="sr-only">Menu</span></button><div class="nav-links"><a href="services.html">Services</a><a href="memberships.html">Memberships</a><a href="gift-cards.html">Gift Cards</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="client-portal.html">Account</a></div><a class="btn btn-primary btn-small" href="booking.html">Book Now</a></nav></header>
+    <main>
+      <section class="page-hero"><div class="shell reveal"><p class="eyebrow">Booking Demo</p><h1>A refined appointment request flow for spa and salon services.</h1><p>This front-end demo shows how Calla Lily could guide clients from service selection to booking policies, contact details, and account access.</p></div></section>
+      <section class="section"><div class="shell booking-shell"><aside class="step-list"><div class="step is-active">1. Service</div><div class="step">2. Provider + Time</div><div class="step">3. Contact</div><div class="step">4. Confirmation</div></aside><div class="contact-card">
+        <div class="booking-step is-active"><h2>Choose service</h2><div class="form-grid"><label>Service<select><option>Calla Lily Signature Facial - $85</option><option>Swedish Massage - 60 min - $89</option><option>Hair Cut & Style - $60</option><option>Spa Pedicure - $60</option><option>Ultimate Bouquet Spa Package - $255</option><option>Monthly Membership Consultation</option></select></label><label>Service goal<select><option>Relax and reset</option><option>Skin refresh</option><option>Hair or beauty service</option><option>Gift or special occasion</option></select></label></div><div class="form-actions"><button class="btn btn-primary" data-next type="button">Continue</button></div></div>
+        <div class="booking-step"><h2>Choose provider and time</h2><div class="form-grid"><label>Provider preference<select><option>No preference</option><option>Hair + Color Specialist</option><option>Skin Therapist</option><option>Massage Therapist</option><option>Nail Technician</option></select></label><label>Preferred window<select><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label><label>Date<input type="date"></label><label>Card on file<select><option>I understand a card is required to hold the appointment</option><option>Please contact me first</option></select></label></div><div class="form-actions"><button class="btn btn-secondary" data-prev type="button">Back</button><button class="btn btn-primary" data-next type="button">Continue</button></div></div>
+        <div class="booking-step"><h2>Contact details</h2><div class="form-grid"><label>Name<input autocomplete="name"></label><label>Email<input type="email" autocomplete="email"></label><label>Phone<input autocomplete="tel"></label><label>Notes<textarea rows="3" placeholder="Service questions, preferences, or gift details"></textarea></label></div><div class="form-actions"><button class="btn btn-secondary" data-prev type="button">Back</button><button class="btn btn-primary" data-next type="button">Review</button></div></div>
+        <div class="booking-step"><h2>Request ready</h2><p>Your request preview is ready. A production build can connect this to live scheduling, card-on-file confirmation, deposits, intake forms, and automated follow-up.</p><div class="tags"><span>24-hour cancellation notice</span><span>Card required to hold appointment</span><span>Portal-ready follow-up</span></div><div class="form-actions"><button class="btn btn-secondary" data-prev type="button">Back</button><a class="btn btn-primary" href="client-portal.html">Preview Portal</a></div></div>
+      </div></div></section>
+    </main>
+    <footer class="footer"><div class="shell footer-bottom"><span>(c) 2026 Calla Lily Redesign Concept.</span><a href="index.html">Home</a></div></footer>
+  </body>
+</html>
