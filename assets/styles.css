@@ -375,9 +375,9 @@ p { color: var(--silver-400); }
 
 @media (max-width: 760px) {
   .hero.cinematic-hero {
-    min-height: 54vh;
+    min-height: auto;
     padding-top: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .cinematic-content {
